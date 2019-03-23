@@ -1,7 +1,8 @@
-Simple python REST webservice connected with SQL database. Webservice is dedicated to Intelligent House android app. 
 
+## Short description
+Simple python REST webservice connected with SQL database. Webservice is dedicated to Intelligent House android app, but can easily be adjusted to your individual needs. 
 
-# Run
+## How to run
 
 ### Create mysql database 
 When logged in to your mysql server type in console
@@ -21,6 +22,6 @@ Ubuntu
 
 `ifconfig` to get your IP in wifi network 
 
-Adress to your webservice
+Your computer IP will be adress of webservice
 
 `http://your_comp_ip:5000`
