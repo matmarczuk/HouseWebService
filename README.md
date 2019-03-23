@@ -9,8 +9,17 @@ When logged in to your mysql server type in console
 
 `mysql> source <path_to_cloned_dir>\create_db.sql;`
 
-### Fill database details in db.py file 
+### Insert some example data to db
 
+`mysql> source <path_to_cloned_dir>\create_db.sql;`
+
+### Fill database details in db.py file 
+`connection = pymysql.connect(host='<hostt_name>',
+                                    user='<user>',
+                                    password ='<password>',
+                                    db='InteligentHouse',
+                                    autocommit=True,
+                                    cursorclass=pymysql.cursors.DictCursor)`
 ### Run webservice with the following command 
 
 `FLASK_APP=run.py flask run --host=0.0.0.0`
