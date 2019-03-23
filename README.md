@@ -1,28 +1,26 @@
+Simple python REST webservice connected with SQL database. Webservice is dedicated to Intelligent House android app. 
+
+
 # Run
-Run with the following command 
+
+### Create mysql database 
+When logged in to your mysql server type in console
+
+`mysql> source <path_to_cloned_dir>\create_db.sql;`
+
+### Fill database details in db.py file 
+
+### Run webservice with the following command 
 
 `FLASK_APP=run.py flask run --host=0.0.0.0`
 
-Ubuntu 
+*setting host = 0.0.0.0 enable to get access to other devicees in same wifi network
 
-`ifconfig` to get your IP in wifi network
+### Check webservice with POSTMAN
+Ubuntu
 
-Webservice is now available in same wifi network
+`ifconfig` to get your IP in wifi network 
+
+Adress to your webservice
 
 `http://your_comp_ip:5000`
-
-# Functions
-
-GET login - authorization
-
-`http://your_comp_ip:5000/login` login and password in header (login:password)
-
-return value 
-
-{
-  'result':'password incorrect'
-}
-
-{
-  'result':'Czesc Olka'
-}
